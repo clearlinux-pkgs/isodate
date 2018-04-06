@@ -4,7 +4,7 @@
 #
 Name     : isodate
 Version  : 0.6.0
-Release  : 3
+Release  : 4
 URL      : https://github.com/gweis/isodate/archive/0.6.0.tar.gz
 Source0  : https://github.com/gweis/isodate/archive/0.6.0.tar.gz
 Summary  : No detailed summary available
@@ -77,7 +77,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1519319941
+export SOURCE_DATE_EPOCH=1523040281
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
@@ -87,7 +87,7 @@ export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 PYTHONPATH=%{buildroot}/usr/lib/python3.6/site-packages python3 setup.py test
 %install
-export SOURCE_DATE_EPOCH=1519319941
+export SOURCE_DATE_EPOCH=1523040281
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
