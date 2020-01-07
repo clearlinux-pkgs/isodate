@@ -4,7 +4,7 @@
 #
 Name     : isodate
 Version  : 0.6.0
-Release  : 23
+Release  : 24
 URL      : https://github.com/gweis/isodate/archive/0.6.0.tar.gz
 Source0  : https://github.com/gweis/isodate/archive/0.6.0.tar.gz
 Summary  : No detailed summary available
