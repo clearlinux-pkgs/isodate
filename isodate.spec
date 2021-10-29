@@ -4,7 +4,7 @@
 #
 Name     : isodate
 Version  : 0.6.0
-Release  : 38
+Release  : 39
 URL      : https://github.com/gweis/isodate/archive/0.6.0.tar.gz
 Source0  : https://github.com/gweis/isodate/archive/0.6.0.tar.gz
 Summary  : An ISO 8601 date/time/duration parser and formatter
@@ -14,12 +14,7 @@ Requires: isodate-python = %{version}-%{release}
 Requires: isodate-python3 = %{version}-%{release}
 Requires: six
 BuildRequires : buildreq-distutils3
-BuildRequires : pluggy
-BuildRequires : py-python
-BuildRequires : pytest
 BuildRequires : six
-BuildRequires : tox
-BuildRequires : virtualenv
 
 %description
 ISO 8601 date/time parser
@@ -66,7 +61,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1603393741
+export SOURCE_DATE_EPOCH=1635524750
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
@@ -75,11 +70,6 @@ export CXXFLAGS="$CXXFLAGS -fno-lto "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
-%check
-export http_proxy=http://127.0.0.1:9/
-export https_proxy=http://127.0.0.1:9/
-export no_proxy=localhost,127.0.0.1,0.0.0.0
-PYTHONPATH=%{buildroot}$(python -c "import sys; print(sys.path[-1])") python setup.py test
 %install
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
