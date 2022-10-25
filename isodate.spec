@@ -4,7 +4,7 @@
 #
 Name     : isodate
 Version  : 0.6.1
-Release  : 42
+Release  : 43
 URL      : https://github.com/gweis/isodate/archive/0.6.1/isodate-0.6.1.tar.gz
 Source0  : https://github.com/gweis/isodate/archive/0.6.1/isodate-0.6.1.tar.gz
 Summary  : An ISO 8601 date/time/duration parser and formatter
